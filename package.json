@@ -1,0 +1,40 @@
+{
+  "name": "dev-cleaner",
+  "version": "1.0.0",
+  "description": "Clean old unused folders.",
+  "repository": "https://github.com/eranshmil/dev-cleaner.git",
+  "author": "eranshmil",
+  "license": "MIT",
+  "main": "./dist/main.bundle.js",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "format": "prettier --write 'src/**/*'"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "source-map-support": "^0.5.9"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.6",
+    "@types/node": "^10.12.10",
+    "@types/react": "^16.7.11",
+    "@types/react-dom": "^16.0.11",
+    "css-loader": "^1.0.1",
+    "electron": "3.0.10",
+    "electron-builder": "^20.38.2",
+    "electron-webpack": "^2.6.1",
+    "electron-webpack-ts": "^3.1.0",
+    "node-sass": "^4.10.0",
+    "prettier": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.1",
+    "webpack": "^4.26.1",
+    "webpack-build-notifier": "^0.1.30"
+  },
+  "engines": {
+    "node": ">=11.3.0"
+  }
+}

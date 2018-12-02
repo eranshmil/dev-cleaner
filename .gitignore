@@ -1,0 +1,11 @@
+node_modules
+yarn-error.log
+
+.vscode
+
+src/**/*.js
+src/**/*.js.map
+dist
+
+.DS_Store
+thumbs.db
