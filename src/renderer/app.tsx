@@ -1,9 +1,15 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
-ReactDOM.render(
-  <div>
-    <h1>It works!</h1>
-  </div>,
-  document.getElementById('app')
-);
+import { hot } from 'react-hot-loader';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <h1>It works!</h1>
+      </div>
+    );
+  }
+}
+
+export default hot(module)(App);
