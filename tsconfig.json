@@ -1,14 +1,22 @@
 {
   "extends": "./node_modules/electron-webpack/tsconfig-base.json",
   "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "module": "es6",
     "jsx": "react",
-    "noImplicitAny": false,
-    "noImplicitThis": true,
+    "target": "es5",
+    "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es2016"
     ]
   },
-  "exclude": [
-    "node_modules"
+  "include": [
+    "./src/"
   ]
 }

@@ -1,0 +1,9 @@
+.mdc-list {
+  flex: 1;
+}
+
+:local {
+  .noRows {
+    text-align: center;
+  }
+}
