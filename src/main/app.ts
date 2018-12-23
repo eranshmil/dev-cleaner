@@ -2,7 +2,8 @@ import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 import { format as formatUrl } from 'url';
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
+import { isDevelopment } from './utils';
+import { installExtensions } from './core/install-extensions';
 
 let mainWindow: Electron.BrowserWindow | null;
 
@@ -14,7 +15,9 @@ function createWindow() {
     center: true,
   });
 
-  if (isDevelopment) {
+  if (isDevelopment()) {
+    installExtensions();
+
     mainWindow.loadURL(
       `http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`
     );
